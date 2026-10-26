@@ -1,0 +1,17 @@
+# Local environments
+.venv/
+venv/
+.env
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+# Generated demo figures and datasets
+outputs/
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/

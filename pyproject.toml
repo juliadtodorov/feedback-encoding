@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prosthetic-feedback-encoding"
+version = "0.1.0"
+description = "Feedback-encoding prototype for a prosthetic hand"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy>=2.0,<3.0",
+    "scipy>=1.14,<2.0",
+    "matplotlib>=3.9,<4.0",
+    "mujoco>=3.2,<4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<10.0"]
+
+[tool.setuptools]
+py-modules = [
+    "config",
+    "preprocessing",
+    "encoding",
+    "pipeline",
+    "mujoco_adapter",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
